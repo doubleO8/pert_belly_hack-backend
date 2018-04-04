@@ -3,12 +3,6 @@ language: python
 python:
 - "2.7"
 
-before_install:
-- sudo apt-get install -y closure-compiler nodejs npm
-- sudo npm config set ca ""
-- sudo npm config set strict-ssl false
-- sudo npm install -g jshint
-
 install:
 - mkdir -p ./pages_out
 - pip install -r requirements-testing.txt
@@ -22,13 +16,11 @@ script:
 
 after_success:
 - python -m flake8 plugin/ --output-file ./pages_out/flake8_report.txt
-- jshint ./sourcefiles/js/ | tee ./pages_out/jshint_report.txt
 - nosetests --with-doctest --with-coverage --cover-html --cover-html-dir=pages_out/cover --cover-erase --cover-package=plugin --with-xunit --xunit-file=pages_out/nosetests.xml plugin/
 - python ./harvest.py
 
 after_failure:
 - python -m flake8 plugin/ --output-file ./pages_out/flake8_report.txt
-- jshint ./sourcefiles/js/ | tee ./pages_out/jshint_report.txt
 - nosetests --with-doctest --with-coverage --cover-html --cover-html-dir=pages_out/cover --cover-erase --cover-package=plugin --with-xunit --xunit-file=pages_out/nosetests.xml plugin/
 - python ./harvest.py
 
