@@ -170,7 +170,7 @@ class ApiController(resource.Resource):
             return self._index(request)
 
         if func_path == 'reverse_proxy_conf':
-            return self._reverse_proxy_configuration()
+            return self._reverse_proxy_configuration(request)
 
         #: name of OpenWebif method to be called
         owif_func = "{:s}{:s}".format(OWIF_PREFIX, func_path)
