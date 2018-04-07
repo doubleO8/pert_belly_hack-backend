@@ -21,11 +21,6 @@ class RESTServicesController(RESTControllerSkeleton):
         """
         HTTP GET implementation.
 
-        .. seealso::
-
-            * *querytype* Parameter – :ref:`event_lookup_parameters-label`
-            * *flags* Parameter – :ref:`event_format-label`
-
         Args:
             request (twisted.web.server.Request): HTTP request object
         Returns:
@@ -46,6 +41,11 @@ class RESTServicesController(RESTControllerSkeleton):
             :statuscode 200: no error
             :statuscode 500: error(s)
 
+        .. http:get:: /services/(int:service_type)
+
+            :statuscode 200: no error
+            :statuscode 500: error(s)
+
         """
         request.setHeader(
             'Access-Control-Allow-Origin', CORS_DEFAULT_ALLOW_ORIGIN)
@@ -53,7 +53,7 @@ class RESTServicesController(RESTControllerSkeleton):
         data = {
             "errors": [],
             "len": 0,
-            "postpath": request.postpath
+            # "postpath": request.postpath
         }
 
         service_types = None
