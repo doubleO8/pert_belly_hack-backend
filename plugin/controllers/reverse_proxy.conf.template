@@ -2,16 +2,24 @@
 # This is an example configuration file for nginx acting as a reverse proxy
 # for an enigma2 device.
 #
-# used variables:
+# used variables (currently used values below):
 #
 # REVERSE_PROXY_PORT    : reverse proxy listening port, defaults to 8000
+#  {REVERSE_PROXY_PORT}
 # ENIGMA2_HOST          : hostname or ip address of enigma2 device
+#  {ENIGMA2_HOST}
 # ENIGMA2_PORT          : web interface port, usually 80
+#  {ENIGMA2_PORT}
 # OSCAM_PORT            : oscam web interface port, usually 83
+#  {OSCAM_PORT}
 # STREAM_PORT           : streaming port, usually 8001
+#  {STREAM_PORT}
 # STREAM_TRANSCODED_PORT: transcoding streaming port, usually 8002
+#  {STREAM_TRANSCODED_PORT}
 # PUBLIC_ROOT           : local copy of 'public/' folder
+#  {PUBLIC_ROOT}
 # PICON_ROOT            : local copy of 'picon/' folder
+#  {PICON_ROOT}
 #
 
 upstream _e2dev {
@@ -40,6 +48,10 @@ server {
     root       {PUBLIC_ROOT};  # PUBLIC_ROOT
 
     listen {REVERSE_PROXY_PORT};  # REVERSE_PROXY_PORT
+    # enable TLS/SSL?
+    # ssl on;
+    # ssl_certificate     /etc/nginx/certs/some.crt;
+    # ssl_certificate_key /etc/nginx/certs/some.key;
 
     charset     utf-8;
     client_max_body_size 1M;
@@ -99,6 +111,10 @@ server {
     root      {PUBLIC_ROOT};  # PUBLIC_ROOT
 
     listen {STREAM_PORT};  # STREAM_PORT
+    # enable TLS/SSL?
+    # ssl on;
+    # ssl_certificate     /etc/nginx/certs/some.crt;
+    # ssl_certificate_key /etc/nginx/certs/some.key;
 
     charset     utf-8;
     client_max_body_size 1M;
@@ -115,6 +131,10 @@ server {
     root      {PUBLIC_ROOT};  # PUBLIC_ROOT
 
     listen {STREAM_TRANSCODED_PORT};  # STREAM_TRANSCODED_PORT
+    # enable TLS/SSL?
+    # ssl on;
+    # ssl_certificate     /etc/nginx/certs/some.crt;
+    # ssl_certificate_key /etc/nginx/certs/some.key;
 
     charset     utf-8;
     client_max_body_size 1M;
