@@ -14,11 +14,11 @@ script:
 - ./opkg-utils/opkg-build -O -o 0 -g 0 -Z gzip pack/
 
 after_success:
-- qa.sh
+- ./qa.sh
 - python ./harvest.py
 
 after_failure:
-- qa.sh
+- ./qa.sh
 - python ./harvest.py
 
 before_deploy:
