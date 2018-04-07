@@ -64,7 +64,7 @@ class RESTServicesController(RESTControllerSkeleton):
             service_types = request.postpath[0]
 
         try:
-            data['services'] = list(self.sc_instance.get_services_set(
+            data['items'] = list(self.sc_instance.get_services_set(
                 service_types))
             data['result'] = True
             data['len'] = len(data['services'])
