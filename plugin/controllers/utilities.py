@@ -659,6 +659,7 @@ def gen_reverse_proxy_configuration(configuration=None, template=None):
         template_content = template_content.replace(search_key, str(value))
     return template_content
 
+
 if __name__ == '__main__':
     import doctest
 

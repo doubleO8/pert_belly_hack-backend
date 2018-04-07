@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 import os
 import logging
-import pprint
 
 from enigma import eServiceCenter, eServiceReference
 from Screens.ChannelSelection import service_types_tv, service_types_radio
@@ -11,7 +10,6 @@ from Screens.ChannelSelection import service_types_tv, service_types_radio
 
 from utilities import parse_servicereference, mangle_snp, SERVICE_KIND_COMMENT
 from utilities import parse_simple_index
-from defaults import PUBLIC_PATH
 
 ROOT_FMT = '{:s} FROM BOUQUET "{:s}" ORDER BY bouquet'
 LIST_FMT = "SN"
@@ -32,6 +30,7 @@ class ServiceController(object):
     """
     Available services listing and conversions.
     """
+
     def __init__(self, *args, **kwargs):
         self.log = logging.getLogger(__name__)
         self.esc_instance = eServiceCenter.getInstance()

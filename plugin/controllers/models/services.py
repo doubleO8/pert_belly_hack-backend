@@ -12,7 +12,7 @@ import os
 import re
 import unicodedata
 import logging
-from time import time, localtime, strftime
+from time import localtime, strftime
 from urllib import quote, unquote
 
 from ..i18n import _, tstrings
