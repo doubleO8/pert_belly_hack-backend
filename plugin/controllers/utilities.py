@@ -660,6 +660,37 @@ def gen_reverse_proxy_configuration(configuration=None, template=None):
     return template_content
 
 
+def mangle_service_type_arg(item):
+    """
+    Translate 'tv' or 'radio' to a set containing the needed service_type IDs.
+    Other values of *item* are expected to be an integer value.
+
+    Args:
+        item (str or int): service_type value
+
+    Returns:
+        set: service_type IDs
+
+    >>> mangle_service_type_arg("tv") == set([1, 195, 134, 17, 22, 25, 31])
+    True
+    >>> mangle_service_type_arg("radio") == set([2, 10])
+    True
+    >>> mangle_service_type_arg(0x10) == { 16 }
+    True
+    """
+    try:
+        if item.lower() == 'tv':
+            # service_types_tv = 1:7:1:0:0:0:0:0:0:0:(type == 1) || (type == 17) || (type == 22) || (type == 25) || (type == 31) || (type == 134) || (type == 195)  # NOQA
+            return {1, 17, 22, 25, 31, 134, 195}
+        elif item.lower() == 'radio':
+            # service_types_radio = 1:7:2:0:0:0:0:0:0:0:(type == 2) || (type == 10)
+            return {2, 10}
+    except AttributeError:
+        pass
+
+    return { item }
+
+
 if __name__ == '__main__':
     import doctest
 
