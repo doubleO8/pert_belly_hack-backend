@@ -671,12 +671,23 @@ def mangle_service_type_arg(item):
     Returns:
         set: service_type IDs
 
+    Raises:
+        ValueError: If a non-integer value was provided
+
     >>> mangle_service_type_arg("tv") == set([1, 195, 134, 17, 22, 25, 31])
     True
     >>> mangle_service_type_arg("radio") == set([2, 10])
     True
     >>> mangle_service_type_arg(0x10) == { 16 }
     True
+    >>> mangle_service_type_arg(1) == {1}
+    True
+    >>> mangle_service_type_arg("1") == {1}
+    True
+    >>> mangle_service_type_arg("") == {1}
+    Traceback (most recent call last):
+        ...
+    ValueError: invalid literal for int() with base 10: ''
     """
     try:
         if item.lower() == 'tv':
@@ -688,7 +699,7 @@ def mangle_service_type_arg(item):
     except AttributeError:
         pass
 
-    return { item }
+    return { int(item) }
 
 
 if __name__ == '__main__':
