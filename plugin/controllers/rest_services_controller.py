@@ -67,7 +67,7 @@ class RESTServicesController(RESTControllerSkeleton):
             data['items'] = list(self.sc_instance.get_services_set(
                 service_types))
             data['result'] = True
-            data['len'] = len(data['services'])
+            data['len'] = len(data['items'])
         except Exception as exc:
             data['errors'].append(repr(exc))
             request.setResponseCode(http.INTERNAL_SERVER_ERROR)
