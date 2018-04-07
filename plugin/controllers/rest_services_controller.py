@@ -61,8 +61,7 @@ class RESTServicesController(RESTControllerSkeleton):
         if len(request.postpath) == 0 or request.postpath[0] == '':
             service_types = None
         elif len(request.postpath) == 1:
-            if request.postpath[0] in ('tv', 'radio'):
-                service_types = request.postpath[0]
+            service_types = request.postpath[0]
 
         try:
             data['services'] = list(self.sc_instance.get_services_set(
