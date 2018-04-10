@@ -12,13 +12,8 @@ from twisted.web import static
 from twisted.web.resource import EncodingResourceWrapper
 from twisted.web.server import GzipEncoderFactory
 
-from i18n import _
 from defaults import PUBLIC_PATH, PICON_PATH, FAVICON_PATH
 
-from enigma import eEPGCache
-from models.config import getCollapsedMenus, getConfigsSections
-from models.config import getShowName, getCustomName, getBoxName
-from models.info import getInfo
 from models.grab import grabScreenshot
 from base import BaseController
 from web import WebController
@@ -36,14 +31,10 @@ TOW_FRONTEND = False
 
 try:
     from ajax import AjaxController
+    from ajax import p_index_for_ajax
     TOW_FRONTEND = True
 except ImportError:
     pass
-
-try:
-    from boxbranding import getBoxType
-except BaseException:
-    from models.owibranding import getBoxType
 
 
 class RootController(BaseController):
@@ -113,25 +104,6 @@ class RootController(BaseController):
         Returns:
             dict: Parameter values
         """
-        ret = getCollapsedMenus()
-        ginfo = getInfo()
-        ret['configsections'] = getConfigsSections()['sections']
-        ret['showname'] = getShowName()['showname']
-        ret['customname'] = getCustomName()['customname']
-        ret['boxname'] = getBoxName()['boxname']
-
-        if not ret['boxname'] or not ret['customname']:
-            ret['boxname'] = ginfo['brand'] + " " + ginfo['model']
-        ret['box'] = getBoxType()
-
-        if hasattr(eEPGCache, 'FULL_DESCRIPTION_SEARCH'):
-            ret['epgsearchcaps'] = True
-        else:
-            ret['epgsearchcaps'] = False
-
-        ret['extras'] = [
-            {'key': 'ajax/settings', 'description': _("Settings")}
-        ]
-        ret['theme'] = 'original-small-screen'
-        ret['content'] = ''
-        return ret
+        if TOW_FRONTEND:
+            return p_index_for_ajax()
+        return {}
