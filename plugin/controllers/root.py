@@ -105,5 +105,5 @@ class RootController(BaseController):
             dict: Parameter values
         """
         if TOW_FRONTEND:
-            return p_index_for_ajax()
+            return p_index_for_ajax(request)
         return {}
