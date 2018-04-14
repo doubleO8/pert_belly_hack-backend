@@ -60,7 +60,8 @@ THEMES = [
     'original-small-screen :)'
 ]
 
-#: file locations accessible using :py:class:`controllers.file.FileController`
+#: file locations accessible using
+# :py:class:`controllers.fs_access.RestrictedFilesystemAccessController`
 FILE_ACCESS_WHITELIST = [
     '/etc/enigma2/lamedb',
     '/var/etc/satellites.xml',

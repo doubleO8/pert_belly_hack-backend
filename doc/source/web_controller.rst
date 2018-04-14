@@ -16,7 +16,7 @@ Basic Controllers
 OpenWebif Specific Controllers
 ------------------------------
 
-.. automodule:: controllers.file
+.. automodule:: controllers.fs_access
     :members:
 
 .. automodule:: controllers.stream

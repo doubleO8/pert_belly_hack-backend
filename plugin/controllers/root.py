@@ -18,7 +18,7 @@ from models.grab import grabScreenshot
 from base import BaseController
 from web import WebController
 from transcoding import TranscodingController
-from file import FileController
+import fs_access
 import rest_api_controller
 import rest_recordings_controller
 import rest_timer_controller
@@ -74,7 +74,7 @@ class RootController(BaseController):
                 session=session), [GzipEncoderFactory()])
         self.putChild("current_event", event_controller_instance)
 
-        self.putChild("file", FileController())
+        self.putChild("file", fs_access.RestrictedFilesystemAccessController())
         self.putChild("grab", grabScreenshot(session))
 
         if TOW_FRONTEND:
