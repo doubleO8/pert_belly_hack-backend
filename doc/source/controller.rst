@@ -3,6 +3,9 @@
 Controller
 ==========
 
+.. automodule:: controllers.defaults
+    :members:
+
 Services
 --------
 

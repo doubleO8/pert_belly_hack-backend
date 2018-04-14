@@ -8,9 +8,6 @@
 #               published by the Free Software Foundation.                   #
 #                                                                            #
 ##############################################################################
-import os
-import glob
-import json
 import logging
 import pprint
 
@@ -19,7 +16,6 @@ from twisted.web import static, resource, http
 from Components.config import config as comp_config
 from utilities import require_valid_file_parameter, build_url
 from utilities import mangle_host_header_port
-from base import CONTENT_TYPE_JSON
 from defaults import FILE_ACCESS_WHITELIST
 from recording import RECORDINGS_ROOT_PATH
 
@@ -27,6 +23,23 @@ FLOG = logging.getLogger("filecrap")
 
 
 class FileController(resource.Resource):
+    """
+    Filesystem Access Controller.
+
+    Provides file downloading and generates `.m3u` playlists on the fly for
+    requested files.
+
+    .. note::
+
+        This implementation
+
+            * does *not* provide directory listing support
+            * Limits access to files contained in \
+              :py:const:`~controllers.recording.RECORDINGS_ROOT_PATH`
+            * Limits access to files contained in \
+              :py:const:`~controllers.defaults.FILE_ACCESS_WHITELIST`
+
+    """
     def render(self, request):
         action = "download"
         if "action" in request.args:
@@ -98,37 +111,3 @@ class FileController(resource.Resource):
             FLOG.warning("No 'dir' support.")
             request.setResponseCode(http.NOT_IMPLEMENTED)
             return ""
-
-            path = request.args["dir"][0]
-            pattern = '*'
-            nofiles = False
-            if "pattern" in request.args:
-                pattern = request.args["pattern"][0]
-            if "nofiles" in request.args:
-                nofiles = True
-            directories = []
-            files = []
-            request.setHeader(
-                "content-type", CONTENT_TYPE_JSON)
-            if os.path.isdir(path):
-                if path == '/':
-                    path = ''
-                try:
-                    files = glob.glob(path + '/' + pattern)
-                except BaseException:
-                    files = []
-                files.sort()
-                tmpfiles = files[:]
-                for x in tmpfiles:
-                    if os.path.isdir(x):
-                        directories.append(x + '/')
-                        files.remove(x)
-                if nofiles:
-                    files = []
-                return json.dumps(
-                    {"result": True, "dirs": directories, "files": files},
-                    indent=2)
-            else:
-                return json.dumps(
-                    {"result": False, "message": "path %s not exits" % (path)},
-                    indent=2)
