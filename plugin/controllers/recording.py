@@ -217,11 +217,12 @@ class RecordingsController(object):
         try:
             fsize = meta['FileSize']
         except KeyError:
-            meta['FileSize'] = -1
+            meta['FileSize'] = 0
             try:
-                meta['FileSize'] = os.path.getsize(data['path'])
-            except Exception:
-                meta['FileSize'] = -2
+                meta['FileSize'] = os.path.getsize(data['path'].encode('utf-8'))
+            except Exception as exc:
+                meta['FileSize'] = 0
+                meta['_exc'] = repr(exc)
 
         return data
 
