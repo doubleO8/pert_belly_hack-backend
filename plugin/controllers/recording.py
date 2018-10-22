@@ -171,7 +171,9 @@ class RecordingsController(object):
 
     def mangle_servicereference_information(self, servicereference):
         data = dict()
-        meta = dict()
+        meta = {
+            'Serviceref': "n/a"
+        }
 
         cs_info = self.service_center_instance.info(servicereference)
 
@@ -198,6 +200,7 @@ class RecordingsController(object):
             except Exception as exc:
                 self.log.error(exc)
 
+        self.log.warning(meta)
         data['meta'] = meta
         event = cs_info.getEvent(servicereference)
         if event:
@@ -210,6 +213,15 @@ class RecordingsController(object):
         except KeyError:
             data['recording_servicename'] = self.get_servicename(
                 servicereference)
+
+        try:
+            fsize = meta['FileSize']
+        except KeyError:
+            meta['FileSize'] = -1
+            try:
+                meta['FileSize'] = os.path.getsize(data['path'])
+            except Exception:
+                meta['FileSize'] = -2
 
         return data
 
