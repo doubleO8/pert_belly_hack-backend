@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="53" errors="35" failures="0" skip="0"><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/events.py", line 194, in <module>
+    from enigma import eEPGCache
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.config"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/fs_access.py", line 8, in <module>
+    from Components.config import config as comp_config
+ImportError: No module named Components.config
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.config"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/i18n.py", line 4, in <module>
+    from Components.config import config as comp_config
+ImportError: No module named Components.config
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Tools.ISO639"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/audiotrack.py", line 3, in <module>
+    from Tools.ISO639 import LanguageCodes
+ImportError: No module named Tools.ISO639
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/config.py", line 12, in <module>
+    from enigma import eEnv
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.config"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/control.py", line 13, in <module>
+    from Components.config import config
+ImportError: No module named Components.config
+]]></error></testcase><testcase classname="plugin.controllers.models.events" name="EventDict" time="0.006"></testcase><testcase classname="plugin.controllers.models.events" name="ServicesEventDict" time="0.001"></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/grab.py", line 12, in <module>
+    from enigma import eConsoleAppContainer
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.config"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/info.py", line 20, in <module>
+    from ..i18n import _
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/i18n.py", line 4, in <module>
+    from Components.config import config as comp_config
+ImportError: No module named Components.config
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.config"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/locations.py", line 13, in <module>
+    from Components.config import config
+ImportError: No module named Components.config
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Tools.Directories"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/mediaplayer.py", line 5, in <module>
+    from Tools.Directories import resolveFilename, SCOPE_PLAYLIST
+ImportError: No module named Tools.Directories
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.config"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/message.py", line 11, in <module>
+    from ..i18n import _
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/i18n.py", line 4, in <module>
+    from Components.config import config as comp_config
+ImportError: No module named Components.config
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/movies.py", line 14, in <module>
+    from enigma import eServiceReference, iServiceInformation, eServiceCenter
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.NameError" message="global name 'about' is not defined"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/owibranding.py", line 818, in <module>
+    STATIC_INFO_DIC = getAllInfo()
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/owibranding.py", line 693, in getAllInfo
+    kernel = about.getKernelVersionString()[0]
+NameError: global name 'about' is not defined
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Tools.Directories"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/plugins.py", line 3, in <module>
+    from Tools.Directories import resolveFilename, SCOPE_PLUGINS
+ImportError: No module named Tools.Directories
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.config"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/services.py", line 18, in <module>
+    from ..i18n import _, tstrings
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/i18n.py", line 4, in <module>
+    from Components.config import config as comp_config
+ImportError: No module named Components.config
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/stream.py", line 13, in <module>
+    from enigma import eServiceReference, getBestPlayableServiceReference
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/timers.py", line 19, in <module>
+    from enigma import eEPGCache, eServiceReference
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.VolumeControl"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/volume.py", line 12, in <module>
+    from Components.VolumeControl import VolumeControl
+ImportError: No module named Components.VolumeControl
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/recording.py", line 6, in <module>
+    import enigma
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/rest_current_event_controller.py", line 13, in <module>
+    import enigma
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/rest_eventlookup_api.py", line 5, in <module>
+    from events import EventsController
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/events.py", line 194, in <module>
+    from enigma import eEPGCache
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/rest_eventsearch_api.py", line 5, in <module>
+    from events import EventsController
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/events.py", line 194, in <module>
+    from enigma import eEPGCache
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/rest_recordings_controller.py", line 17, in <module>
+    from recording import RecordingsController
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/recording.py", line 6, in <module>
+    import enigma
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/rest_saveconfig_api.py", line 13, in <module>
+    from web import WebController
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/web.py", line 13, in <module>
+    from enigma import eServiceCenter, eEPGCache, eServiceReference
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/rest_services_controller.py", line 7, in <module>
+    from service import ServiceController
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/service.py", line 6, in <module>
+    from enigma import eServiceCenter, eServiceReference
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/rest_timer_controller.py", line 16, in <module>
+    from timer import TimersController
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/timer.py", line 5, in <module>
+    import enigma
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/root.py", line 17, in <module>
+    from models.grab import grabScreenshot
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/models/grab.py", line 12, in <module>
+    from enigma import eConsoleAppContainer
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/service.py", line 6, in <module>
+    from enigma import eServiceCenter, eServiceReference
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/servicelists.py", line 6, in <module>
+    from enigma import eDVBDB
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.Converter.Streaming"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/stream.py", line 12, in <module>
+    from Components.Converter.Streaming import Streaming
+ImportError: No module named Components.Converter.Streaming
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/timer.py", line 5, in <module>
+    import enigma
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.config"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/transcoding.py", line 13, in <module>
+    from Components.config import config as comp_config
+ImportError: No module named Components.config
+]]></error></testcase><testcase classname="plugin.controllers.utilities" name="build_url" time="0.015"></testcase><testcase classname="plugin.controllers.utilities" name="get_servicereference_portions" time="0.002"></testcase><testcase classname="plugin.controllers.utilities" name="lenient_decode" time="0.008"></testcase><testcase classname="plugin.controllers.utilities" name="lenient_force_utf_8" time="0.002"></testcase><testcase classname="plugin.controllers.utilities" name="mangle_host_header_port" time="0.004"></testcase><testcase classname="plugin.controllers.utilities" name="mangle_service_type_arg" time="0.003"></testcase><testcase classname="plugin.controllers.utilities" name="mangle_snp" time="0.002"></testcase><testcase classname="plugin.controllers.utilities" name="parse_servicereference" time="0.003"></testcase><testcase classname="plugin.controllers.utilities" name="parse_simple_index" time="0.001"></testcase><testcase classname="plugin.controllers.utilities" name="sanitise_filename_slashes" time="0.001"></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named enigma"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/controllers/web.py", line 13, in <module>
+    from enigma import eServiceCenter, eEPGCache, eServiceReference
+ImportError: No module named enigma
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Components.config"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/httpserver.py", line 15, in <module>
+    from Components.config import config as comp_config
+ImportError: No module named Components.config
+]]></error></testcase><testcase classname="nose.failure.Failure" name="runTest" time="0.000"><error type="exceptions.ImportError" message="No module named Screens.Screen"><![CDATA[Traceback (most recent call last):
+  File "/opt/python/2.7.14/lib/python2.7/unittest/case.py", line 329, in run
+    testMethod()
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/loader.py", line 418, in loadTestsFromName
+    addr.filename, addr.module)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 47, in importFromPath
+    return self.importFromDir(dir_path, fqname)
+  File "/home/travis/virtualenv/python2.7.14/lib/python2.7/site-packages/nose/importer.py", line 94, in importFromDir
+    mod = load_module(part_fqname, fh, filename, desc)
+  File "/home/travis/build/doubleO8/pert_belly_hack-backend/plugin/plugin.py", line 38, in <module>
+    from Screens.Screen import Screen  # noqa: E402
+ImportError: No module named Screens.Screen
+]]></error></testcase><testcase classname="test_evil_eval.EvilEvalTestCase" name="testAtticSanitation" time="0.000"></testcase><testcase classname="test_evil_eval.EvilEvalTestCase" name="testAtticSanitation2" time="0.000"></testcase><testcase classname="test_evil_eval.EvilEvalTestCase" name="testBraveNewSanitation" time="0.000"></testcase><testcase classname="test_evil_eval.EvilEvalTestCase" name="testMockup" time="0.002"></testcase><testcase classname="test_evil_eval.EvilEvalTestCase" name="testMockupAccess" time="0.000"></testcase><testcase classname="test_evil_eval.EvilEvalTestCase" name="testMockupBraveNewAccess" time="0.000"></testcase></testsuite>

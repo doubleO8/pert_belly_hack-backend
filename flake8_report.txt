@@ -1,0 +1,10 @@
+plugin/controllers/recording.py:254:21: F841 local variable 'fsize' is assigned to but never used
+plugin/controllers/utilities.py:369:80: E501 line too long (104 > 79 characters)
+plugin/controllers/utilities.py:697:80: E501 line too long (83 > 79 characters)
+plugin/controllers/utilities.py:702:13: E201 whitespace after '{'
+plugin/controllers/utilities.py:702:23: E202 whitespace before '}'
+plugin/controllers/models/timers.py:441:56: F821 undefined name 'entry'
+plugin/controllers/models/timers.py:903:25: F821 undefined name 'PowerTimerEntry'
+plugin/controllers/models/config.py:115:80: E501 line too long (152 > 79 characters)
+plugin/controllers/models/config.py:135:80: E501 line too long (145 > 79 characters)
+plugin/controllers/models/config.py:155:80: E501 line too long (97 > 79 characters)
