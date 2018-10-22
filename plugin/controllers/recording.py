@@ -214,16 +214,6 @@ class RecordingsController(object):
             data['recording_servicename'] = self.get_servicename(
                 servicereference)
 
-        try:
-            fsize = meta['FileSize']
-        except KeyError:
-            meta['FileSize'] = 0
-            try:
-                meta['FileSize'] = os.path.getsize(data['path'].encode('utf-8'))
-            except Exception as exc:
-                meta['FileSize'] = 0
-                meta['_exc'] = repr(exc)
-
         return data
 
     def get_servicename(self, servicereference, encoding=None):
@@ -260,6 +250,18 @@ class RecordingsController(object):
             else:
                 item.update(
                     self.mangle_servicereference_information(serviceref))
+
+                try:
+                    fsize = item['meta']['FileSize']
+                except KeyError:
+                    item['meta']['FileSize'] = 0
+
+                    try:
+                        item['meta']['FileSize'] = os.path.getsize(
+                            item['path'].encode('utf-8'))
+                    except Exception as exc:
+                        item['meta']['FileSize'] = 0
+                        item['meta']['_exc'] = repr(exc)
 
                 cutfile = (item['path'] + '.cuts').encode('utf-8')
                 if os.path.isfile(cutfile):
