@@ -200,7 +200,6 @@ class RecordingsController(object):
             except Exception as exc:
                 self.log.error(exc)
 
-        self.log.warning(meta)
         data['meta'] = meta
         event = cs_info.getEvent(servicereference)
         if event:
@@ -261,7 +260,7 @@ class RecordingsController(object):
                             item['path'].encode('utf-8'))
                     except Exception as exc:
                         item['meta']['FileSize'] = 0
-                        item['meta']['_exc'] = repr(exc)
+                        # item['meta']['_exc'] = repr(exc)
 
                 cutfile = (item['path'] + '.cuts').encode('utf-8')
                 if os.path.isfile(cutfile):
