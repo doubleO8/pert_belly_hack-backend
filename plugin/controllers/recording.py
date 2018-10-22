@@ -172,7 +172,7 @@ class RecordingsController(object):
     def mangle_servicereference_information(self, servicereference):
         data = dict()
         meta = {
-            'Serviceref': "n/a"
+            'Serviceref': "-1:0:0:0:0:0:0:0:0:0:"
         }
 
         cs_info = self.service_center_instance.info(servicereference)
