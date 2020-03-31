@@ -177,6 +177,18 @@ class RecordingsController(object):
 
         cs_info = self.service_center_instance.info(servicereference)
 
+        if cs_info is None:
+            try:
+                value = servicereference.toString()
+            except Exception:
+                value = '??'
+
+            self.log.warning("no cs_info for {!r}".format(value))
+            data['meta'] = meta
+            data['recording_servicename'] = ''
+
+            return data
+
         for fkey in SERVICE_INFORMATION_FIELDS:
             try:
                 const_value = getattr(iServiceInformation, fkey)
